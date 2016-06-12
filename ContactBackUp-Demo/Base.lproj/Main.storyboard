@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V24-Gv-fFd">
+                                <rect key="frame" x="30" y="218" width="75" height="30"/>
+                                <state key="normal" title="系统通讯录"/>
+                                <connections>
+                                    <action selector="jumpToSystemContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5wF-lK-MlG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnE-5A-ucx">
+                                <rect key="frame" x="38" y="349" width="60" height="30"/>
+                                <state key="normal" title="显示相册"/>
+                                <connections>
+                                    <action selector="showPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8I0-Q8-P0p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-xx-OpY">
+                                <rect key="frame" x="503" y="349" width="60" height="30"/>
+                                <state key="normal" title="备份相册"/>
+                                <connections>
+                                    <action selector="backUpPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAN-ua-7Aa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8U-s9-6Yf">
+                                <rect key="frame" x="495" y="218" width="75" height="30"/>
+                                <state key="normal" title="规档到桌面"/>
+                                <connections>
+                                    <action selector="showContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ug-LQ-3I0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bp-IK-ESy">
+                                <rect key="frame" x="263" y="218" width="75" height="30"/>
+                                <state key="normal" title="添加联系人"/>
+                                <connections>
+                                    <action selector="addContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zDJ-jo-Zfb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q8U-s9-6Yf" firstAttribute="centerY" secondItem="V24-Gv-fFd" secondAttribute="centerY" id="1KY-4G-N1u"/>
+                            <constraint firstItem="5U8-xx-OpY" firstAttribute="centerY" secondItem="bnE-5A-ucx" secondAttribute="centerY" id="RYp-eM-u03"/>
+                            <constraint firstItem="V24-Gv-fFd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="198" id="SNB-JB-nLJ"/>
+                            <constraint firstItem="5U8-xx-OpY" firstAttribute="centerX" secondItem="q8U-s9-6Yf" secondAttribute="centerX" id="TJu-dz-dSc"/>
+                            <constraint firstItem="V24-Gv-fFd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ZJw-m6-h59"/>
+                            <constraint firstItem="2bp-IK-ESy" firstAttribute="centerY" secondItem="V24-Gv-fFd" secondAttribute="centerY" id="bqQ-0x-at3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q8U-s9-6Yf" secondAttribute="trailing" constant="10" id="gPW-uE-iXX"/>
+                            <constraint firstItem="bnE-5A-ucx" firstAttribute="centerX" secondItem="V24-Gv-fFd" secondAttribute="centerX" id="k7G-9L-wIw"/>
+                            <constraint firstItem="2bp-IK-ESy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kxh-Oj-5ka"/>
+                            <constraint firstItem="bnE-5A-ucx" firstAttribute="top" secondItem="V24-Gv-fFd" secondAttribute="bottom" constant="101" id="siG-7s-Sgb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="374"/>
+        </scene>
+    </scenes>
+</document>
